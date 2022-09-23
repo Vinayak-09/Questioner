@@ -34,7 +34,7 @@
     -->Feel free to Connect with me on Telegram [@vinayak_09](http://t.me/vinayak_09).
 
 #### PS:NOTE
-- You can download [Questioner Android App Demo](https://drive.google.com/file/d/1GtHpXUbQXo-aK5wZVSAJqLRcYMhABBLv/view?usp=sharing)
+- You can download [Questioner Android App Demo](https://github.com/Vinayak-09/Questioner/releases/download/v1.0.0/Questioner.apk)
 
 ------------
 
