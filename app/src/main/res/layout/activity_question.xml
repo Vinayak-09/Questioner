@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background_gradient"
+    tools:context=".QuestionActivity">
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:max="30"
+        android:progress="100"
+        android:progressBackgroundTint="@color/black"
+        app:indicatorColor="#1D9E00"
+        app:indicatorSize="50dp"
+        app:showAnimationBehavior="inward"
+        app:trackColor="#A3454349" />
+
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/progressBar"
+        android:layout_alignBottom="@id/progressBar"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_below="@id/progressBar"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:layout_height="150dp"
+        android:id="@+id/questionDisplay"
+        android:hint="Type Your Question Here"
+        android:textAlignment="center"
+        android:maxLines="5"
+        android:layout_above="@id/linearLayout"
+        android:background="@drawable/blur_white"/>
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout"
+        android:layout_marginVertical="30dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blur_white"
+                android:paddingVertical="20dp"
+                android:hint="Add Option A"
+                android:id="@+id/optionA"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blur_white"
+                android:paddingVertical="20dp"
+                android:hint="Add Option B"
+                android:id="@+id/optionB"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blur_white"
+                android:paddingVertical="20dp"
+                android:id="@+id/optionC"
+                android:hint="Add Option C"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/optionD"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blur_white"
+                android:paddingVertical="20dp"
+                android:hint="Add Option D"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

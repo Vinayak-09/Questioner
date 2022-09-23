@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background_gradient"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textStyle="bold"
+            android:src="@drawable/firepng"
+            android:id="@+id/firePng"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:id="@+id/marks"
+            android:layout_below="@id/firePng"
+            android:layout_marginTop="20dp"
+            android:text="10/10"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blur_white"
+            android:layout_below="@id/marks"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:text="Back"
+            android:layout_marginTop="40dp"
+            android:id="@+id/backResult"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
